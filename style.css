@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #FDFDDF;
+}
+
+#header {
+    height: 10vh;
+}
+
+#footer {
+    height: 10vh;
+}
+
+#main {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameboard {
+    height: 409px; 
+    width: 409px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    flex-shrink: 0;
+    border: 2px solid snow;
+}
+
+.socket {
+    width: 135px;
+    height: 135px;
+    border: 1px solid snow;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Dongle', sans-serif;
+    
+}
+
+.socket.one {
+    background-color: #c1db11;
+}
+
+.socket.two {
+    background-color: #75af1a;
+}
