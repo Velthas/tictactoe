@@ -2,11 +2,16 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #FDFDDF;
+    background-color: #f3f3f3;
 }
 
 #header {
     height: 10vh;
+    text-align: center; 
+    margin: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #footer {
@@ -16,8 +21,30 @@
 #main {
     height: 80vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+}
+
+.tic, 
+.tac,
+.toe {
+font-size: 80px;
+font-family: 'Dongle', sans-serif;
+display: inline-block;
+}
+
+.tic {
+    color: crimson
+}
+
+.tac {
+    color: seagreen
+}
+
+.toe {
+    color: sandybrown
 }
 
 #gameboard {
@@ -28,6 +55,7 @@
     justify-content: stretch;
     flex-shrink: 0;
     border: 2px solid snow;
+    box-shadow: 0px 0px 10px 0px rgb(56, 54, 54);
 }
 
 .socket {
@@ -40,6 +68,7 @@
     align-items: center;
     color: white;
     font-family: 'Dongle', sans-serif;
+    cursor: pointer;
     
 }
 
@@ -49,4 +78,33 @@
 
 .socket.two {
     background-color: #75af1a;
+}
+
+#gamestatus {
+    height: 5vh;
+    font-size: 20px;
+    color: crimson;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+#reset {
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    height: 50px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: sandybrown;
+    color: white;
+    border: none;
+}
+
+#reset:hover {
+    background-color: saddlebrown;
+}
+
+#reset:active {
+    transform: translateY(2.5px)
 }
