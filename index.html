@@ -8,8 +8,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="header"></div>
+    <div id="header">
+        <p class="tic">Tic</p>
+        <p class="tac">Tac</p>
+        <p class="toe">Toe</p>
+    </div>
     <div id="main">
+        <div id="gamestatus">Player X's turn!</div>
         <div id="gameboard">
             <div class="socket one"></div>
             <div class="socket two"></div>
@@ -21,6 +26,7 @@
             <div class="socket two"></div>
             <div class="socket one"></div>
         </div>
+        <button id="reset">Reset</button>
     </div>
     <div id="footer"></div>
 </body>
