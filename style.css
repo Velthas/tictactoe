@@ -6,16 +6,20 @@
 }
 
 #header {
-    height: 10vh;
+    height: 8vh;
     text-align: center; 
-    margin: 16px;
+    margin: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #footer {
-    height: 10vh;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8vh;
 }
 
 #main {
@@ -107,4 +111,38 @@ display: inline-block;
 
 #reset:active {
     transform: translateY(2.5px)
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color:seagreen
+}
+
+@media screen and (max-width: 450px) {
+    .tic, 
+    .tac,
+    .toe {
+        font-size: 60px;
+    }
+
+    #gameboard {
+        width: 305px;
+        height: 305px;
+    }
+
+    .socket {
+        width: 100px;
+        height: 100px;
+    }
+
+    #gamestatus {
+        font-size: 18px;
+    }
+
+    button {
+        width: 80px;
+        height: 45px;
+        font-size: 18px
+    }
 }
